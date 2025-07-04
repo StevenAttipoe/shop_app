@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class StrawberryConfig(AppConfig):
+class StrawberryqlConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'strawberry'
+    name = 'strawberryql'

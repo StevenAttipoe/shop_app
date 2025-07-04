@@ -36,7 +36,7 @@ services:
             rm -f inventory/migrations/0001_initial.py &&
             python manage.py migrate &&
             python manage.py makemigrations &&
-            python manage.py migrate inventory --fake &&
+            python manage.py migrate inventory &&
             python manage.py shell -c 'from django.contrib.auth.models import User; User.objects.create_superuser(\"admin\", \"admin@example.com\", \"admin\");' ;
           fi &&
           python manage.py runserver 0.0.0.0:8000
